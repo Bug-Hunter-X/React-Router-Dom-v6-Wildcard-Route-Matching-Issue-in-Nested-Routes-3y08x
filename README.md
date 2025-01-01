@@ -1,0 +1,3 @@
+# React Router Dom v6 Wildcard Route Matching Issue
+
+This repository demonstrates a common issue encountered when using wildcard routes (*) in nested routes within React Router Dom v6.  The issue arises when a wildcard route is defined after a route with dynamic segments. The wildcard route will always take precedence due to its generality, even when a more specific route could be matched, causing unexpected component rendering and incorrect parameter extraction using `useParams`.  This can be challenging to debug, especially in complex routing setups.  This repo provides example code illustrating the problem and a solution to correctly handle the route matching scenario.
